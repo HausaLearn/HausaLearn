@@ -1,125 +1,217 @@
-<style>
-  :root {
-    --yellow: #f7d700;
-    --navy: #003366;
-    --light-gray: #f1f1f1;
-    --white: #ffffff;
-  }
+<!DOCTYPE html>
 
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--white);
-    color: var(--navy);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HausaLearn - Learn Hausa, Connect with Culture</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    :root {
+      --yellow: #f7d700;
+      --navy: #003366;
+      --light-gray: #f1f1f1;
+      --white: #ffffff;
+    }
 
-  header {
-    background: var(--yellow);
-    padding: 2rem 1rem;
-  }
+```
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--white);
+  color: var(--navy);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  header img {
-    width: 100px;
-  }
+header {
+  background: var(--yellow);
+  padding: 2rem 1rem;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    margin: 0.5rem 0 0;
-    color: var(--navy);
-  }
+header img {
+  width: 100px;
+}
 
-  h2 {
-    font-weight: normal;
-    margin: 1.5rem 0 1rem;
-    color: var(--navy);
-  }
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 0;
+  color: var(--navy);
+}
 
-  main {
-    padding: 2rem 1rem;
-    background-color: var(--white);
-  }
+h2 {
+  font-weight: normal;
+  margin: 1.5rem 0 1rem;
+  color: var(--navy);
+}
 
-  section {
-    margin-bottom: 3rem;
-  }
+main {
+  padding: 2rem 1rem;
+  background-color: var(--white);
+}
 
-  .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    background-color: var(--navy);
-    color: var(--white);
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background 0.3s;
-  }
+section {
+  margin-bottom: 3rem;
+}
 
-  .btn:hover {
-    background-color: #001f4d;
-  }
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
 
-  .courses ul {
-    list-style: none;
-    padding: 0;
-  }
+.btn:hover {
+  background-color: #001f4d;
+}
 
-  .courses li {
-    background: var(--light-gray);
-    margin: 0.5rem auto;
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 500px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
+.courses ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .social-icons {
-    margin: 1rem 0;
-  }
+.courses li {
+  background: var(--light-gray);
+  margin: 0.5rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
 
-  .social-icons a {
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    color: var(--navy);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+.courses li:hover {
+  transform: scale(1.02);
+}
 
-  .social-icons a:hover {
-    color: var(--yellow);
-  }
+.course-link {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: bold;
+  font-size: 1.05rem;
+}
 
-  form {
-    max-width: 500px;
-    margin: auto;
-    text-align: left;
-    padding: 1rem;
-    background-color: var(--light-gray);
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-  }
+.course-link i {
+  margin-right: 8px;
+  color: var(--yellow);
+}
 
-  label {
-    font-weight: bold;
-    color: var(--navy);
-  }
+.social-icons {
+  margin: 1rem 0;
+}
 
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
+.social-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-  footer {
-    background: var(--yellow);
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: var(--navy);
-  }
-</style>
+.social-icons a:hover {
+  color: var(--yellow);
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  padding: 1rem;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+label {
+  font-weight: bold;
+  color: var(--navy);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+footer {
+  background: var(--yellow);
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--navy);
+}
+```
+
+  </style>
+</head>
+<body>
+  <header class="animate__animated animate__fadeInDown">
+    <img src="logo.png" alt="HausaLearn Logo" />
+    <h1>HausaLearn</h1>
+    <h2>Learn Hausa, Connect with Culture</h2>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="animate__animated animate__fadeInUp">
+      <h2>About HausaLearn</h2>
+      <p>HausaLearn is a fun, culture-driven platform that makes learning the Hausa language simple and engaging for both kids and adults worldwide. Whether you're a beginner or looking to improve, we've got you covered.</p>
+    </section>
+
+```
+<!-- Courses Section -->
+<section class="courses animate__animated animate__fadeInUp" id="courses">
+  <h2>Our Courses</h2>
+  <ul>
+    <li><a href="#kids" class="course-link"><i class="fas fa-child"></i>Beginner Hausa for Kids</a></li>
+    <li><a href="#adults" class="course-link"><i class="fas fa-comments"></i>Conversational Hausa for Adults</a></li>
+    <li><a href="#reading" class="course-link"><i class="fas fa-book-reader"></i>Hausa Reading & Writing Skills</a></li>
+    <li><a href="#culture" class="course-link"><i class="fas fa-globe-africa"></i>Hausa Culture & Proverbs</a></li>
+    <li><a href="#tutoring" class="course-link"><i class="fas fa-user-friends"></i>Private & Group Tutoring</a></li>
+  </ul>
+</section>
+
+<!-- Contact/Join Form -->
+<section id="contact" class="animate__animated animate__fadeInUp">
+  <h2>Join HausaLearn or Contact Us</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="hidden" name="_next" value="thankyou.html" />
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="_replyto" required><br>
+
+    <label for="message">How can we help you?</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<!-- Social Media Icons -->
+<section class="social-icons animate__animated animate__fadeInUp">
+  <h2>Follow Us</h2>
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/2347066153910" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</section>
+```
+
+  </main>
+
+  <footer class="animate__animated animate__fadeInUp">
+    &copy; 2025 HausaLearn. All rights reserved.
+  </footer>
+</body>
+</html>
