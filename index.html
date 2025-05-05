@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HausaLearn - Learn Hausa, Connect with Culture</title>
+  <meta name="description" content="HausaLearn - Learn Hausa language with fun courses, cultural insights, and interactive lessons. Designed for both kids and adults.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
   <style>
     :root {
       --yellow: #f7d700;
@@ -53,6 +56,7 @@
       z-index: 1000;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -124,17 +128,52 @@
       color: var(--navy);
     }
 
+    form {
+      background: var(--light-gray);
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
     @media (max-width: 600px) {
       nav a {
         padding: 1rem;
         font-size: 0.9rem;
       }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+      }
+
+      .courses li {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
+  <header class="animate__animated animate__fadeInDown">
     <img src="logo.png" alt="HausaLearn Logo" />
     <h1>HausaLearn</h1>
     <p><strong>Learn Hausa, Connect with Culture</strong></p>
@@ -146,14 +185,15 @@
     <a href="#join">Join</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#socials">Socials</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
+  <section id="about" class="animate__animated animate__fadeInUp">
     <h2>About HausaLearn</h2>
     <p>HausaLearn is a global EdTech platform offering fun, accessible Hausa language education for both kids and adults. We focus on practical skills, culture, and fluency—helping you connect with language and heritage.</p>
   </section>
 
-  <section id="courses">
+  <section id="courses" class="animate__animated animate__fadeInUp">
     <h2>Our Courses</h2>
     <ul class="courses">
       <li><i class="fas fa-child"></i> Beginner Hausa for Kids</li>
@@ -164,39 +204,52 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="join">
     <h2>Join HausaLearn</h2>
-    <p>Ready to start learning? Send us a message using the form below:</p>
-    <a href="#contact" class="btn">Join Now</a>
+    <p>Ready to start learning? Send us a message using the contact form below or chat directly on WhatsApp.</p>
+    <a href="#contact" class="btn">Send a Message</a>
+    <br/><br/>
+    <a href="https://wa.me/2347066153910" class="btn" style="background-color: #25D366;" target="_blank">
+      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </a>
   </section>
 
-  <section id="testimonials">
+  <section id="testimonials" class="animate__animated animate__fadeInUp">
     <h2>What Our Students Say</h2>
-
-    <!-- You can duplicate this block for each testimonial -->
     <div class="testimonials">
       "I never thought learning Hausa could be so fun. The lessons are simple and I now speak confidently with my in-laws!" – Aisha from London
     </div>
-
     <div class="testimonials">
       "I'm an adult learner and HausaLearn made it easy to catch up. The cultural lessons are also very rich." – Ahmed from Abuja
     </div>
-
-    <!-- Add more as needed -->
   </section>
 
-  <section id="socials">
+  <section id="socials" class="animate__animated animate__fadeInUp">
     <h2>Follow Us on Social Media</h2>
     <div class="social-embed">
-      <!-- Facebook -->
-      <a href="https://facebook.com/hausalearn" target="_blank">
+      <a href="https://facebook.com/yourpage" target="_blank">
         <i class="fab fa-facebook fa-2x" style="color: #003366;"></i> Visit our Facebook
       </a><br><br>
-      <!-- Instagram -->
-      <a href="https://instagram.com/hausalearn" target="_blank">
+      <a href="https://instagram.com/yourpage" target="_blank">
         <i class="fab fa-instagram fa-2x" style="color: #003366;"></i> Visit our Instagram
       </a>
     </div>
+  </section>
+
+  <section id="contact" class="animate__animated animate__fadeInUp">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xjvnlkkn" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
   </section>
 
   <footer>
