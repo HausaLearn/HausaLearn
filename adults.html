@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HausaLearn - Conversational Hausa for Adults</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F1F1F1;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #F7D700;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 100px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0 0;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin: 1rem 0 0.5rem;
+    }
+
+    main {
+      padding: 2rem 1rem;
+    }
+
+    .overview, .modules, .testimonials, .join-form {
+      margin-bottom: 3rem;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #22c55e;
+    }
+
+    .testimonials {
+      background-color: #fef3c7;
+      border-radius: 8px;
+    }
+
+    .testimonials p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #F7D700;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="HausaLearn Logo" />
+    <h1>HausaLearn</h1>
+    <h2>Conversational Hausa for Adults</h2>
+  </header>
+
+  <main>
+    <!-- Overview Section -->
+    <section class="overview">
+      <h2>Course Overview</h2>
+      <p>This course is designed for adults who want to learn how to speak Hausa fluently and confidently. By the end of the course, you will be able to engage in conversations, understand everyday expressions, and improve your comprehension of the language.</p>
+    </section>
+
+    <!-- Modules/Topics Section -->
+    <section class="modules">
+      <h2>Course Modules</h2>
+      <ul>
+        <li>Basic Conversational Phrases</li>
+        <li>Understanding Hausa Grammar</li>
+        <li>Common Daily Expressions</li>
+        <li>Advanced Sentence Structures</li>
+        <li>Cultural Context in Conversations</li>
+        <li>Practice Sessions and Live Conversations</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Students Say</h2>
+      <p>"I never thought I could speak Hausa so fluently! The course made learning fun and easy. Highly recommended!" — John Doe</p>
+      <p>"The live conversation practice sessions were a game changer for me. I now feel confident speaking in Hausa every day!" — Jane Smith</p>
+    </section>
+
+    <!-- Join Form Section -->
+    <section class="join-form">
+      <h2>Join the Course Now</h2>
+      <p>Fill out the form below to sign up for the Conversational Hausa for Adults course. Get started on your journey to speaking Hausa fluently!</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="hidden" name="_next" value="thankyou.html" />
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="_replyto" required><br>
+
+        <label for="message">Why do you want to learn Hausa?</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="submit" class="btn">Join Now</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 HausaLearn. All rights reserved. <br />
+    <a href="index.html" class="btn">Back to Home</a>
+  </footer>
+
+</body>
+</html>
