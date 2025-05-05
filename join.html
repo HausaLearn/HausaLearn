@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join HausaLearn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --yellow: #f7d700;
+      --navy: #003366;
+      --light-gray: #f1f1f1;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background-color: var(--white);
+      color: var(--navy);
+    }
+
+    header {
+      background-color: var(--yellow);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 80px;
+    }
+
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 2rem;
+      color: var(--navy);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--navy);
+    }
+
+    form {
+      background: var(--light-gray);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: var(--navy);
+      color: var(--white);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #002244;
+    }
+
+    .testimonials {
+      margin-top: 3rem;
+    }
+
+    .testimonial {
+      background: #fafafa;
+      padding: 1rem;
+      border-left: 5px solid var(--yellow);
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .social a {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      color: var(--yellow);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--yellow);
+      margin-top: 3rem;
+      color: var(--navy);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="HausaLearn Logo">
+    <h1>Join HausaLearn</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Ready to Learn Hausa?</h2>
+      <p>Fill out the form below to join HausaLearn. We’ll get back to you shortly with course details and next steps.</p>
+
+      <form action="https://formspree.io/f/xzzrrgyg" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="_replyto" id="email" required>
+
+        <label for="message">Why are you interested in learning Hausa?</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+
+        <input type="hidden" name="_next" value="thankyou.html">
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Students Say</h2>
+
+      <div class="testimonial">
+        <p>"I never thought I could speak Hausa so confidently. HausaLearn made it simple and fun!"<br><strong>– Aisha from London</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <p>"As a heritage learner, I connected with my roots in a way I never imagined."<br><strong>– Michael from Canada</strong></p>
+      </div>
+
+      <!-- Add more testimonials as needed -->
+    </section>
+
+    <div class="social">
+      <h2>Connect With Us</h2>
+      <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/2347066153910" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 HausaLearn. All rights reserved.
+  </footer>
+
+</body>
+</html>
