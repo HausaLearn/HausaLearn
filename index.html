@@ -26,16 +26,25 @@
       font-family: 'Segoe UI', sans-serif;
       color: var(--navy);
       background: var(--white);
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     header {
-      background: var(--yellow);
+      background: rgba(247, 215, 0, 0.9);
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 4rem 1rem;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
     }
 
     header img {
       width: 90px;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -135,7 +144,24 @@
     }
 
     footer .social-embed a:hover {
-      color: #25D366; /* Hover effect on social icons */
+      color: #25D366;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
     }
 
     form {
@@ -260,6 +286,10 @@
       </a>
     </div>
   </footer>
+
+  <a href="https://wa.me/message/27JZYN7QQJLGD1" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
