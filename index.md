@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <html lang="en">
 <head>
@@ -298,4 +298,4 @@
 
 </body>
 </html> 
-This is my old html/css with all my things. Where can i paste it to get them all back?
+
